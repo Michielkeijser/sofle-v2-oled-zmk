@@ -28,6 +28,15 @@
         };
     };
 
+    behaviors {
+        Mouse_scroll: Mouse_scroll {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "MOUSE_SCROLL";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -49,9 +58,7 @@
                    &kp LGUI  &kp LALT  &kp LCTRL  &mo LOWER  &kp SPACE     &kp RET           &mo RAISE  &kp RCTRL  &kp GLOBE  &kp RGUI
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp PAGE_DOWN PAGE_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>, <&Mouse_scroll>;
         };
 
         lower_layer {
