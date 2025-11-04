@@ -40,7 +40,7 @@ layers:
   - )
   - '|'
   - {t: ▽, type: trans}
-  - '='
+  - '&studio_unlock'
   - '-'
   - KP PLUS
   - '{'
@@ -53,7 +53,7 @@ layers:
   - ':'
   - \
   - {t: ▽, type: trans}
-  - '&studio_unlock'
+  - raise
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -83,9 +83,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PG UP
-  - {t: ▽, type: trans}
+  - '&mkp LCLK'
   - UP
-  - {t: ▽, type: trans}
+  - '&mkp RCLK'
   - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -145,7 +145,7 @@ layers:
   - RGB EFF
   - ''
   - ''
-  - ''
+  - '&mmv MOVE_UP'
   - ''
   - ''
   - ''
@@ -156,9 +156,9 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
   - ''
   - ''
   - ''
