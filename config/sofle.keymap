@@ -28,6 +28,15 @@
         };
     };
 
+    behaviors {
+        Encoder_Speed: Encoder_Speed {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            label = "ENCODER_SPEED";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
