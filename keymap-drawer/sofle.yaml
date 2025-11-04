@@ -123,7 +123,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - lower
   adjust:
   - BT CLR
   - {t: BT, h: '0'}
