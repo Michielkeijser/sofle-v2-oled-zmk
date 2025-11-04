@@ -49,9 +49,9 @@
                    &kp LGUI  &kp LALT  &kp LCTRL  &mo 1   &kp SPACE     &kp RET           &mo 2   &kp RCTRL  &kp GLOBE  &kp RGUI
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN 2>,
-                <&inc_dec_kp PAGE_DOWN PAGE_UP 2>;
+sensor-bindings =
+    <&sensor_rotate_var_kp C_VOL_UP C_VOL_DN 2>,
+    <&sensor_rotate_var_kp PAGE_DOWN PAGE_UP 2>;
         };
 
         lower_layer {
@@ -73,9 +73,9 @@
                                 &mo 2      &trans       &trans    &trans     &trans    &trans  &trans     &trans    &trans    &trans
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN 2>,
-                <&inc_dec_kp PAGE_DOWN PAGE_UP 2>;
+sensor-bindings =
+    <&sensor_rotate_var_kp C_VOL_UP C_VOL_DN 2>,
+    <&sensor_rotate_var_kp PAGE_DOWN PAGE_UP 2>;
         };
 
         raise_layer {
@@ -96,9 +96,9 @@
                           &trans        &trans        &trans        &trans        &trans    &trans  &trans     &trans     &trans    &mo 1
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN 2>,
-                <&inc_dec_kp PAGE_DOWN PAGE_UP 2>;
+sensor-bindings =
+    <&sensor_rotate_var_kp C_VOL_UP C_VOL_DN 2>,
+    <&sensor_rotate_var_kp PAGE_DOWN PAGE_UP 2>;
         };
 
         adjust_layer {
