@@ -1,5 +1,0 @@
-/ {
-    &encoder_left {
-        steps-per-detent = <2>;
-    };
-};
