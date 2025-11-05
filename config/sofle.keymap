@@ -37,22 +37,6 @@
     };
 
     behaviors {
-        Backlight_brightness: Backlight_brightness {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
-
-            label = "BACKLIGHT_BRIGHTNESS";
-        };
-
-        Backlight_effect: Backlight_effect {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&rgb_ug RGB_EFF>, <&rgb_ug RGB_EFR>;
-
-            label = "BACKLIGHT_EFFECT";
-        };
-
         Mouse_scroll: Mouse_scroll {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
@@ -152,7 +136,7 @@
                                     &none            &none            &none            &none            &none              &none  &none  &none           &none           &none
             >;
 
-            sensor-bindings = <&Backlight_brightness>, <&Backlight_effect>;
+            sensor-bindings = <&none>, <&none>;
         };
     };
 };
