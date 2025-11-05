@@ -1,0 +1,10 @@
+/ {
+    // Adjust sensitivity for both encoders
+    &encoder0 {
+        steps-per-press = <1>;
+    };
+
+    &encoder1 {
+        steps-per-press = <1>;
+    };
+};
