@@ -50,8 +50,8 @@
             >;
 
 sensor-bindings =
-    <&sensor_rotate_var_kp C_VOL_UP C_VOL_DN 2>,
-    <&sensor_rotate_var_kp PAGE_DOWN PAGE_UP 2>;
+    <&sensor_rotate_var_kp C_VOL_UP C_VOL_DN>,
+    <&sensor_rotate_var_kp PAGE_DOWN PAGE_UP>;
         };
 
         lower_layer {
@@ -74,8 +74,8 @@ sensor-bindings =
             >;
 
 sensor-bindings =
-    <&sensor_rotate_var_kp C_VOL_UP C_VOL_DN 2>,
-    <&sensor_rotate_var_kp PAGE_DOWN PAGE_UP 2>;
+    <&sensor_rotate_var_kp C_VOL_UP C_VOL_DN>,
+    <&sensor_rotate_var_kp PAGE_DOWN PAGE_UP>;
         };
 
         raise_layer {
@@ -97,8 +97,8 @@ sensor-bindings =
             >;
 
 sensor-bindings =
-    <&sensor_rotate_var_kp C_VOL_UP C_VOL_DN 2>,
-    <&sensor_rotate_var_kp PAGE_DOWN PAGE_UP 2>;
+    <&sensor_rotate_var_kp C_VOL_UP C_VOL_DN>,
+    <&sensor_rotate_var_kp PAGE_DOWN PAGE_UP>;
         };
 
         adjust_layer {
