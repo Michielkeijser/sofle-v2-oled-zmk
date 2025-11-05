@@ -35,16 +35,27 @@
             then-layer = <3>;
         };
     };
-
+/ {
     behaviors {
-        Mouse_scroll: Mouse_scroll {
+        Mouse_scroll: behavior_mouse_scroll {
             compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            #sensor-binding-cells = <2>;
+            label = "MOUSE_SCROLL";   // (optional, deprecated but harmless)
+        };
 
-            label = "MOUSE_SCROLL";
+        Backlight_brightness: behavior_backlight_brightness {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <2>;
+            label = "BACKLIGHT_BRIGHTNESS";
+        };
+
+        Backlight_effect: behavior_backlight_effect {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <2>;
+            label = "BACKLIGHT_EFFECT";
         };
     };
+};
 
     keymap {
         compatible = "zmk,keymap";
