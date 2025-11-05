@@ -48,6 +48,10 @@
 &kp LSHFT  &kp Z   &kp X     &kp C     &kp V      &kp B   &kp C_MUTE    &kp C_PLAY_PAUSE  &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp NON_US_BACKSLASH
                    &kp LGUI  &kp LALT  &kp LCTRL  &mo 1   &kp SPACE     &kp RET           &mo 2   &kp RCTRL  &kp GLOBE  &kp RGUI
             >;
+
+            sensor-bindings =
+                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
+                <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         lower_layer {
