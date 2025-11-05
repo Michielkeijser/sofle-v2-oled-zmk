@@ -36,6 +36,22 @@
         };
     };
 
+    behaviors {
+        Custom_scroll: Custom_scroll {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            label = "CUSTOM_SCROLL";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+        };
+
+        Underglow_encoder: Underglow_encoder {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            label = "UNDERGLOW_ENCODER";
+            #sensor-binding-cells = <2>;
+            bindings = <&rgb_ug>, <&rgb_ug>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -81,7 +97,9 @@
                                 &mo 2      &trans       &trans    &trans     &trans    &trans  &trans     &trans    &trans        &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>, <&none>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
+                <&Custom_scroll SCRL_DOWN SCRL_UP>;
         };
 
         raise_layer {
@@ -124,7 +142,9 @@
                                     &none            &none            &none            &none            &none              &none  &none  &none           &none           &none
             >;
 
-            sensor-bindings = <&none>, <&none>;
+            sensor-bindings =
+                <&Underglow_encoder RGB_EFF RGB_BRD>,
+                <&Underglow_encoder RGB_BRI RGB_BRD>;
         };
     };
 };
