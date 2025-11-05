@@ -1,16 +1,14 @@
 / {
-    // Left encoder configuration
     &encoder0 {
         compatible = "alps,ec11";
-        steps = <60>;                  // or 120, depending on your hardware pulses per detent
-        triggers-per-rotation = <30>;  // 30 clicks per rotation
+        steps = <30>;                   // one step per detent (half of default)
+        triggers-per-rotation = <30>;   // one trigger per detent
         status = "okay";
     };
 
-    // Right encoder configuration
     &encoder1 {
         compatible = "alps,ec11";
-        steps = <60>;
+        steps = <30>;
         triggers-per-rotation = <30>;
         status = "okay";
     };
