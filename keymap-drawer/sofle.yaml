@@ -154,7 +154,7 @@ layers:
   - RGB BRI
   - ''
   - ''
-  - ''
+  - RGB TOG
   - ''
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
@@ -167,7 +167,7 @@ layers:
   - ''
   - ''
   - ''
-  - RGB TOG
+  - ''
   - ''
   - ''
   - ''
