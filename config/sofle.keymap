@@ -36,6 +36,22 @@
         };
     };
 
+    behaviors {
+        RGB_Brightness: RGB_Brightness {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "RGB_BRIGHTNESS";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+        };
+
+        RGB_Effect: RGB_Effect {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "RGB_EFFECT";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_EFF>, <&rgb_ug RGB_EFR>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
