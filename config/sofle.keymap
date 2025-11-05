@@ -41,18 +41,24 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+
+            label = "BACKLIGHT_BRIGHTNESS";
         };
 
         Backlight_effect: Backlight_effect {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&rgb_ug RGB_EFF>, <&rgb_ug RGB_EFR>;
+
+            label = "BACKLIGHT_EFFECT";
         };
 
         Mouse_scroll: Mouse_scroll {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
+            label = "MOUSE_SCROLL";
         };
     };
 
