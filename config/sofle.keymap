@@ -40,21 +40,21 @@
         Underglow_brightness: Underglow_brightness {
             compatible = "zmk,behavior-sensor-rotate";
             label = "UNDERGLOW_BRIGHTNESS";
-            #sensor-binding-cells = <0>;
+            #sensor-binding-cells = <2>;
             bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
         };
 
         Underglow_effect: Underglow_effect {
             compatible = "zmk,behavior-sensor-rotate";
             label = "UNDERGLOW_EFFECT";
-            #sensor-binding-cells = <0>;
+            #sensor-binding-cells = <2>;
             bindings = <&rgb_ug RGB_EFF>, <&rgb_ug RGB_EFR>;
         };
 
         Custom_Scroll: Custom_Scroll {
             compatible = "zmk,behavior-sensor-rotate";
             label = "CUSTOM_SCROLL";
-            #sensor-binding-cells = <0>;
+            #sensor-binding-cells = <2>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
         };
     };
