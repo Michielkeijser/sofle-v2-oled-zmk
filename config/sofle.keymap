@@ -143,9 +143,7 @@
                                     &none            &none            &none            &none            &none              &none  &none  &none           &none           &none
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOLUME_UP C_VOL_DN>,
-                <&inc_dec_kp PAGE_DOWN PAGE_UP>;
+            sensor-bindings = <&Backlight_brightness>, <&Backlight_effect>;
         };
     };
 };
