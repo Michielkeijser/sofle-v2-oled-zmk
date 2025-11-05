@@ -51,9 +51,9 @@
             bindings = <&rgb_ug RGB_EFF>, <&rgb_ug RGB_EFR>;
         };
 
-        Mouse_Scroll: Mouse_Scroll {
+        Custom_Scroll: Custom_Scroll {
             compatible = "zmk,behavior-sensor-rotate";
-            label = "MOUSE_SCROLL";
+            label = "CUSTOM_SCROLL";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
         };
