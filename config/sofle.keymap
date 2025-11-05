@@ -104,7 +104,9 @@
                                 &mo 2      &trans       &trans    &trans     &trans    &trans  &trans     &trans    &trans        &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
+                <&Mouse_Scroll>;
         };
 
         raise_layer {
@@ -146,6 +148,8 @@
 &none              &none            &none            &none            &none            &none            &rgb_ug RGB_TOG    &none  &none  &none           &none           &none            &none  &none
                                     &none            &none            &none            &none            &none              &none  &none  &none           &none           &none
             >;
+
+            sensor-bindings = <&RGB_Effect>, <&RGB_Brightness>;
         };
     };
 };
