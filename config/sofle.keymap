@@ -51,11 +51,11 @@
             bindings = <&rgb_ug RGB_EFF>, <&rgb_ug RGB_EFR>;
         };
 
-        Custom_Scroll: Custom_Scroll {
-            compatible = "zmk,behavior-sensor-rotate";
+        Custom_scroll: Custom_scroll {
+            compatible = "zmk,behavior-sensor-rotate-var";
             label = "CUSTOM_SCROLL";
             #sensor-binding-cells = <2>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            bindings = <&msc>, <&msc>;
         };
     };
 
@@ -106,7 +106,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
-                <&inc_dec_kp PAGE_DOWN PAGE_UP>;
+                <&Custom_scroll SCRL_DOWN SCRL_UP>;
         };
 
         raise_layer {
