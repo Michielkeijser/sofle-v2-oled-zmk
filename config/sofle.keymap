@@ -36,29 +36,6 @@
         };
     };
 
-    behaviors {
-        RGB_Brightness: RGB_Brightness {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "RGB_BRIGHTNESS";
-            #sensor-binding-cells = <0>;
-            bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
-        };
-
-        RGB_Effect: RGB_Effect {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "RGB_EFFECT";
-            #sensor-binding-cells = <0>;
-            bindings = <&rgb_ug RGB_EFF>, <&rgb_ug RGB_EFR>;
-        };
-
-        Mouse_Scroll: Mouse_Scroll {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "MOUSE_SCROLL";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -104,9 +81,7 @@
                                 &mo 2      &trans       &trans    &trans     &trans    &trans  &trans     &trans    &trans        &trans
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
-                <&Mouse_Scroll>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>, <&none>;
         };
 
         raise_layer {
@@ -149,7 +124,7 @@
                                     &none            &none            &none            &none            &none              &none  &none  &none           &none           &none
             >;
 
-            sensor-bindings = <&RGB_Effect>, <&RGB_Brightness>;
+            sensor-bindings = <&none>, <&none>;
         };
     };
 };
