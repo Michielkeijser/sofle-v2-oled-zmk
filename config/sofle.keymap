@@ -29,13 +29,6 @@
     };
 
     behaviors {
-        Custom_scroll: Custom_scroll {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "CUSTOM_SCROLL";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-        };
-
         Underglow_brightness: Underglow_brightness {
             compatible = "zmk,behavior-sensor-rotate";
             label = "UNDERGLOW_BRIGHTNESS";
