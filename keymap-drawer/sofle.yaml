@@ -45,7 +45,7 @@ layers:
   - KP PLUS
   - '{'
   - '}'
-  - '&msc SCRL_UP'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '['
   - ']'
