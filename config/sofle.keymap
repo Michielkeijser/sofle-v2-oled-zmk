@@ -51,11 +51,11 @@
             bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
         };
 
-        Underglow_effect: Underglow_effect {
+        Underglow_color: Underglow_color {
             compatible = "zmk,behavior-sensor-rotate";
-            label = "UNDERGLOW_EFFECT";
+            label = "UNDERGLOW_COLOR";
             #sensor-binding-cells = <0>;
-            bindings = <&rgb_ug RGB_EFF>, <&rgb_ug RGB_EFR>;
+            bindings = <&rgb_ug RGB_HUI>, <&rgb_ug RGB_HUD>;
         };
     };
 
@@ -149,7 +149,7 @@
                                     &none            &none            &none            &none            &none              &none  &none  &none           &none           &none
             >;
 
-            sensor-bindings = <&Underglow_effect>, <&Underglow_brightness>;
+            sensor-bindings = <&Underglow_color>, <&Underglow_brightness>;
         };
     };
 };
