@@ -15,7 +15,6 @@
 #define LOWER 1
 #define RAISE 2
 #define ADJUST 3
-#define ZMK_MOUSE_DEFAULT_SCRL_VAL 140
 
 / {
     // Activate ADJUST layer by pressing raise and lower
