@@ -9,18 +9,6 @@
 #define SCRL_LEFT_ENCODER MOVE_X(-ZMK_MOUSE_SCRL_VAL_ENCODER)
 #define SCRL_RIGHT_ENCODER MOVE_X(ZMK_MOUSE_SCRL_VAL_ENCODER)
 
-/ {
-	behaviors {
-        Custom_scroll: Custom_scroll {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "CUSTOM_SCROLL";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-            tap-ms = <20>;
-        };
-	};
-};
-
 &mmv {
   acceleration-exponent = <1>;      // 1
   time-to-max-speed-ms = <500>;    // 40
