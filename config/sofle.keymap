@@ -98,9 +98,7 @@
                                 &mo 2      &trans       &trans    &trans     &trans    &trans  &trans     &trans    &trans        &trans
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
-                <&Custom_scroll>;
+            sensor-bindings = <&Custom_scroll>, <&Custom_scroll>;
         };
 
         raise_layer {
