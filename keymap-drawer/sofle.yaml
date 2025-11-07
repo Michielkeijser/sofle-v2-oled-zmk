@@ -39,7 +39,7 @@ layers:
   - RIGHT
   - )
   - '|'
-  - CLCK
+  - {t: ▽, type: trans}
   - '&studio_unlock'
   - '-'
   - KP PLUS
@@ -64,7 +64,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   raise:
-  - BT CLR
+  - {t: ▽, type: trans}
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
