@@ -53,7 +53,7 @@ layers:
   - ':'
   - \
   - {t: ▽, type: trans}
-  - raise
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -99,7 +99,7 @@ layers:
   - DOWN
   - RIGHT
   - DEL
-  - BSPC
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - UNDO
   - CUT
@@ -123,7 +123,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - lower
+  - {t: ▽, type: trans}
   adjust:
   - BT CLR
   - {t: BT, h: '0'}
