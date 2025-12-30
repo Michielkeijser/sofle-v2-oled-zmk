@@ -4,17 +4,17 @@ layers:
     X, C, V, B, MUTE, PLAY PAUSE, N, M, ',', ., /, \, LGUI, LALT, LCTRL, lower, SPACE, RET, raise, RCTRL, RIGHT ALT, RGUI]
   lower:
   - '&studio_unlock'
-  - F1
-  - F2
-  - F3
-  - F4
+  - BRI DN
+  - BRI UP
+  - AC DESKTOP SHOW ALL WINDOWS
+  - AC SEARCH
   - F5
   - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
+  - PREV
+  - PP
+  - NEXT
+  - MUTE
+  - AL LOCK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
