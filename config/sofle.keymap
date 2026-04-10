@@ -24,6 +24,11 @@
     time-to-max-speed-ms = <400>;
 };
 
+&mt {
+    tapping-term-ms = <500>;
+    flavor = "balanced";
+};
+
 / {
     // Activate ADJUST layer by pressing raise and lower
 
